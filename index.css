@@ -66,6 +66,8 @@ header:has(+ h1) {}
     color: color-mix(in lch, blue 50%, green 50%);
 }
 
+.invis {}
+
 .form-submit-button {}
 
 .form-submit-button p {}
