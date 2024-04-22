@@ -6,6 +6,7 @@
     <title>Meeting Minutes</title>
     <meta name="author" content="Joseph Kan">
     <link rel="icon" type="image/x-icon" href="assets/meeting-diagram.png">
+    <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <h3> 1/1/2024 </h3>
     </header>
 
-    <nav>
+    <nav class="nav">
         <div>
             <a href="#attendance"> Jump to Attendance List </a>
         </div>
@@ -40,7 +41,7 @@
     </nav>
 
     <main>
-        <div>
+        <div class="main-container">
             <section id="attendance">
                 <h2> Attendance List </h2>
                 <ul>
@@ -116,6 +117,7 @@
 
             <section id="comments">
                 <h2> Comments, Questions, Concerns </h2>
+                <p class="invis">Can't see me</p>
                 <div>
                     <details>
                         <summary>
@@ -139,7 +141,7 @@
                         <summary>
                             What will our architecture look like?
                         </summary>
-                        <img alt="Diagram" src="assets/diagram.png">
+                        <img id="diagram" alt="Diagram" src="assets/diagram.png">
 
                     </details>
                 </div>
@@ -173,41 +175,50 @@
 
     <footer>
         <form>
-            <fieldset>
-                <div>
-                    <p>Alcoholic</p>
-                    <input type="checkbox">
-                </div>
+            <div class="form">
+                <h1 class="form-title">Order Food</h1>
+                <fieldset class="fieldset">
+                    <div class="form-field-container">
+                        <p>Alcoholic</p>
+                        <input type="checkbox">
+                    </div>
 
-                <div>
-                    <p>Delivery</p>
-                    <input type="radio">
-                </div>
+                    <div class="form-field-container">
+                        <p>Delivery</p>
+                        <input type="radio">
+                    </div>
 
-                <div>
-                    <p>Tip</p>
-                    <input type="text">
-                </div>
+                    <div class="form-field-container">
+                        <p>Tip</p>
+                        <input type="text">
+                    </div>
 
-                <div>
-                    <p>Delivery Date</p>
-                    <input type="date">
-                </div>
-            </fieldset>
-            <datalist>
-                <option>Water</option>
-                <option>Soda</option>
-                <option>Coffee</option>
-                <option>Tea</option>
-            </datalist>
-            <select>
-                <option>Water</option>
-                <option>Soda</option>
-                <option>Coffee</option>
-                <option>Tea</option>
-            </select>
-            <textarea>Fill in any preferences here</textarea>
-            <button>Submit</button>
+                    <div class="form-field-container">
+                        <p>Delivery Date</p>
+                        <input type="date">
+                    </div>
+                    <datalist>
+                        <option>Water</option>
+                        <option>Soda</option>
+                        <option>Coffee</option>
+                        <option>Tea</option>
+                    </datalist>
+                    <select>
+                        <option>Water</option>
+                        <option>Soda</option>
+                        <option>Coffee</option>
+                        <option>Tea</option>
+                    </select>
+                    <textarea>Fill in any preferences here</textarea>
+                </fieldset>
+                <button class="form-submit-button button-color">
+                    <p>
+                        <b>
+                            Submit
+                        </b>
+                    </p>
+                </button>
+            </div>
         </form>
     </footer>
 

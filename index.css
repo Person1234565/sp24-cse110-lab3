@@ -1,0 +1,81 @@
+/* Added empty rulesets for some of the selectors for the time being, 
+ * just want to make sure all the required selectors are present and 
+ * all color requirements are met */
+
+
+/* Universal Selector */
+* {}
+
+/* ID Selector */
+#diagram {}
+
+/* Selector List */
+h1,
+h2,
+h3,
+p,
+li,
+summary,
+a,
+button {}
+
+
+/* Class Selector */
+.main-container {
+    background-color: rgb(207, 255, 224);
+}
+
+/* Element Selector */
+video {}
+
+/* Attribute Selector */
+a[href*="#"] {
+    color: black;
+}
+
+.fieldset {}
+
+/* Descendant Combinator */
+.fieldset p {}
+
+/* Child Combinator */
+.nav>div {
+    background-color: hsl(280, 100%, 91%);
+}
+
+/* General Sibling Combinator */
+details~details {}
+
+/* Adjacent Sibling Combinator */
+h2+ul {}
+
+/* Combining Two Selectors */
+div.form {
+    background-color: #E3E7FF;
+}
+
+/* :has() Selector */
+header:has(+ h1) {}
+
+/* Nested Selector */
+.form-field-container {
+    & p {}
+}
+
+.form-title {
+    color: color-mix(in lch, blue 50%, green 50%);
+}
+
+.form-submit-button {}
+
+.form-submit-button p {}
+
+/* Pseudo-class Selector */
+.form-submit-button:hover {}
+
+
+.form-submit-button:active {}
+
+.button-color {
+    background-color: mediumslateblue;
+}
