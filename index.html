@@ -11,6 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css" />
+    <style>
+        input,
+        select {
+            font-size: 1.25em;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,23 +29,23 @@
 
     <nav class="nav">
         <div>
-            <a href="#attendance"> Jump to Attendance List </a>
+            <a href="#attendance"> Attendance List </a>
         </div>
 
         <div>
-            <a href="#agenda">Jump to Agenda</a>
+            <a href="#agenda"> Agenda</a>
         </div>
 
         <div>
-            <a href="#unfinishedtopics">Jump to Unfinished Topics</a>
+            <a href="#unfinishedtopics"> Unfinished Topics</a>
         </div>
 
         <div>
-            <a href="#newtopics">Jump to New Topics</a>
+            <a href="#newtopics"> New Topics</a>
         </div>
 
         <div>
-            <a href="#comments"> Jump to Comments, Questions, Concerns </a>
+            <a href="#comments"> Comments, Questions, Concerns </a>
         </div>
 
     </nav>
@@ -154,7 +160,7 @@
                         <summary>
                             <i><b>Meeting recording/audio</b></i>
                         </summary>
-                        <span>
+                        <div class="recordings">
                             <audio controls>
                                 <source src="assets/meeting-audio.mp3" type="audio/mpeg">
 
@@ -163,7 +169,7 @@
                                 <source src="assets/meeting-video.mp4" type="video/mp4">
 
                             </video>
-                        </span>
+                        </div>
 
                     </details>
                 </div>
@@ -207,13 +213,16 @@
                         <option>Coffee</option>
                         <option>Tea</option>
                     </datalist>
-                    <select>
-                        <option>Water</option>
-                        <option>Soda</option>
-                        <option>Coffee</option>
-                        <option>Tea</option>
-                    </select>
-                    <textarea>Fill in any preferences here</textarea>
+
+                    <span>
+                        <textarea style="font-size: 1.25em;">Fill in any preferences here</textarea>
+                        <select>
+                            <option>Water</option>
+                            <option>Soda</option>
+                            <option>Coffee</option>
+                            <option>Tea</option>
+                        </select>
+                    </span>
                 </fieldset>
                 <button class="form-submit-button button-color">
                     <p>
