@@ -7,7 +7,10 @@
 * {}
 
 /* ID Selector */
-#diagram {}
+#diagram {
+    max-width: 100vw;
+    max-height: 100vh;
+}
 
 /* Selector List */
 h1,
@@ -17,8 +20,13 @@ p,
 li,
 summary,
 a,
-button {}
+button {
+    font-family: "Nunito", sans-serif;
+}
 
+.underline {
+    text-decoration: underline;
+}
 
 /* Class Selector */
 .main-container {
@@ -36,11 +44,21 @@ a[href*="#"] {
 .fieldset {}
 
 /* Descendant Combinator */
-.fieldset p {}
+.fieldset p {
+    text-align: center;
+}
+
+.nav {
+    position: sticky;
+    top: 12px;
+}
+
 
 /* Child Combinator */
 .nav>div {
+    position: relative;
     background-color: hsl(280, 100%, 91%);
+    display: block;
 }
 
 /* General Sibling Combinator */
@@ -59,24 +77,40 @@ header:has(+ h1) {}
 
 /* Nested Selector */
 .form-field-container {
-    & p {}
+    & p {
+        color: gray;
+    }
 }
 
 .form-title {
     color: color-mix(in lch, blue 50%, green 50%);
+    text-align: center;
+    width: 40em;
 }
 
-.invis {}
+.invis {
+    display: none;
+}
 
-.form-submit-button {}
+.form-submit-button {
+    min-width: 30vw;
+    height: 64px;
+}
 
-.form-submit-button p {}
+.form-submit-button p {
+    font-size: 20px;
+    color: white;
+}
 
 /* Pseudo-class Selector */
-.form-submit-button:hover {}
+.form-submit-button:hover {
+    opacity: 50%;
+}
 
 
-.form-submit-button:active {}
+.form-submit-button:active {
+    opacity: 80%;
+}
 
 .button-color {
     background-color: mediumslateblue;
