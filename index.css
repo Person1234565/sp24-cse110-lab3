@@ -5,7 +5,7 @@
 
 /* Universal Selector */
 * {
-    border: 0px solid black
+    border: 0px solid color(srgb 0 1 1)
 }
 
 /* ID Selector */
@@ -88,11 +88,10 @@ a[href*="#"] {
 
 /* Child Combinator */
 .nav>div {
-    --bgColor: hsl(280, 100%, 91%);
     position: relative;
     padding: 10px;
     border-radius: 8px;
-    background-color: var(--bgColor, cyan);
+    background-color: hsl(280, 100%, 91%);
     display: block;
     text-align: center;
 }
