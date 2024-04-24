@@ -5,7 +5,7 @@
 
 /* Universal Selector */
 * {
-    border: 0px solid black
+    border: 0px solid color(srgb 0 1 1)
 }
 
 /* ID Selector */
