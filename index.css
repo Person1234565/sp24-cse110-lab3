@@ -88,10 +88,11 @@ a[href*="#"] {
 
 /* Child Combinator */
 .nav>div {
+    --bgColor: hsl(280, 100%, 91%);
     position: relative;
     padding: 10px;
     border-radius: 8px;
-    background-color: hsl(280, 100%, 91%);
+    background-color: var(--bgColor, cyan);
     display: block;
     text-align: center;
 }
